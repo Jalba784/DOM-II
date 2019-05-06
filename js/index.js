@@ -132,6 +132,11 @@ function dragDrop() {
     this.append(boatImg);
 }
 
+// Load Event
+window.addEventListener('load', function() {
+    alert("The page has fully loaded!");
+});
+
 
 console.log(contentDest);
 
