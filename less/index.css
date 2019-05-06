@@ -303,6 +303,9 @@ img {
     width: 100%;
   }
 }
+.home .content-destination .resizrDiv {
+  margin-top: 20px;
+}
 .home .content-destination img {
   border-radius: 10px;
 }

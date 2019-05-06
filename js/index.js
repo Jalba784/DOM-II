@@ -146,6 +146,13 @@ passwordFocus.addEventListener('blur', (e) => {
     e.target.style.backgroundColor = '';
 });
 
+// Resize Event
+const heightOutput = document.querySelector('#spanHeight');
+const widthOutput = document.querySelector('#spanWidth');
+window.addEventListener('resize', function () {
+    heightOutput.textContent = window.innerHeight;
+    widthOutput.textContent = window.innerWidth;
+});
 
 
 console.log(contentDest);
