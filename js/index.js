@@ -188,6 +188,13 @@ function selectingText(e) {
 }
 
 
+// Double Click Event
+let firstP = document.querySelector("p");
+firstP.addEventListener('dblclick', clickMe);
+function clickMe() {
+    firstP.textContent = 'I was double clicked';
+}
+
 console.log(passwordText);
 
 
