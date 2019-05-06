@@ -84,9 +84,12 @@ firstInput.addEventListener('keydown', (e) => {
 });
 
 
-//Wheel
+//Wheel Event makes text bigger
 let wheelPara = document.querySelector('#paraScroll');
-console.log(wheelPara);
+wheelPara.addEventListener('wheel', biggerText);
+function biggerText() {
+    this.style.fontSize = '5.0rem';
+}
 
 console.log(contentDest);
 
