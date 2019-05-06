@@ -177,7 +177,18 @@ scrollEvent.addEventListener('scroll', function (e) {
     }
 });
 
-console.log(contentDest);
+// Select Event
+let passwordText = document.querySelector("input");
+passwordText.addEventListener('select', selectingText);
+
+function selectingText(e) {
+    const log = document.querySelector('#selectedText');
+    const selection = e.target.value.substring(e.target.selectionStart, e.target.selectionEnd);
+    log.textContent = `The text you selected is: ${selection}`;
+}
+
+
+console.log(passwordText);
 
 
 
