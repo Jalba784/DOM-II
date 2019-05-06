@@ -296,6 +296,7 @@ img {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+  /*  Test square for drag and drop event listener */
 }
 @media (max-width: 500px) {
   .home .content-destination {
@@ -304,6 +305,12 @@ img {
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+.home .content-destination .empty {
+  width: 80%;
+  height: 170px;
+  border: 3px dashed darkgreen;
+  margin: 0 auto;
 }
 .home .content-destination #paraScroll {
   overflow: scroll;

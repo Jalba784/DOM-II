@@ -91,6 +91,48 @@ function biggerText() {
     this.style.fontSize = '5.0rem';
 }
 
+// Drag & Drop
+let boatImg = document.querySelector('#boat');
+let dashedSqaure = document.querySelectorAll('.empty');
+
+// Boat Image Listeners
+boatImg.addEventListener('dragstart', dragStart);
+boatImg.addEventListener('dragend', dragEnd);
+
+//Loop through empties and call drag events
+for (const empty of dashedSqaure) {
+    empty.addEventListener('dragover', dragOver);
+    empty.addEventListener('dragenter', dragEnter);
+    empty.addEventListener('dragleave', dragLeave);
+    empty.addEventListener('drop', dragDrop);
+}
+
+
+
+// Drag Functions
+function dragStart() {
+    this.className += ' hold';
+    setTimeout(() => this.className = 'invisible', 0);
+}
+function dragEnd() {
+    this.className = 'boatImg';
+}
+function dragOver(e) {
+    e.preventDefault();
+}
+function dragEnter(e) {
+    e.preventDefault();
+    this.className += ' hovered';
+}
+function dragLeave() {
+    this.className = 'empty';
+}
+function dragDrop() {
+    this.className = 'empty';
+    this.append(boatImg);
+}
+
+
 console.log(contentDest);
 
 
