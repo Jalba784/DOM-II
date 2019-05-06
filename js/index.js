@@ -154,6 +154,28 @@ window.addEventListener('resize', function () {
     widthOutput.textContent = window.innerWidth;
 });
 
+// Scroll Event
+let scrollEvent = document.querySelector('#paraScroll');
+let lastPosition = 0;
+let ticking = false;
+let counter = 0;
+let star = '*';
+
+// Checkout the console to see a pretty cool effect
+function doSomething(argument) {
+    ++counter;
+    console.log(star.repeat(counter));
+}
+scrollEvent.addEventListener('scroll', function (e) {
+    lastPosition = window.scrollY;
+    if (!ticking) {
+        window.requestAnimationFrame(function () {
+            doSomething(lastPosition);
+            ticking = false;
+        });
+        ticking = true;
+    }
+});
 
 console.log(contentDest);
 
