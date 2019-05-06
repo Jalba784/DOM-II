@@ -137,6 +137,16 @@ window.addEventListener('load', function() {
     alert("The page has fully loaded!");
 });
 
+// Focus Event
+let passwordFocus = document.querySelector("input[name='password']");
+passwordFocus.addEventListener('focus', (e) => {
+    e.target.style.backgroundColor = 'pink';
+});
+passwordFocus.addEventListener('blur', (e) => {
+    e.target.style.backgroundColor = '';
+});
+
+
 
 console.log(contentDest);
 
