@@ -1,8 +1,10 @@
+
 .home {
 
   .intro {
     padding: 90px 0 10px;
     border-bottom: 2px dashed @navigation-border;
+
 
     img {
       max-width: 100%;
@@ -81,9 +83,22 @@
     @media @mobile {
       width: 100%;
     }
+    .resizrDiv {
+      margin-top: 20px;
+    }
 
     img {
       border-radius: 10px;
+    }
+    /*  Test square for drag and drop event listener */
+    .empty {
+      width: 80%;
+      height: 170px;
+      border: 3px dashed darkgreen;
+      margin: 0 auto;
+    }
+    #paraScroll {
+      overflow: scroll;
     }
   }
 
@@ -100,6 +115,12 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      //Added #paraScroll to project for wheel demonstration purposes
+      #paraScroll {
+        height: 170px;
+        overflow: scroll;
+        margin-bottom: 9px;
+      }
 
       @media @mobile {
         width: 80%;

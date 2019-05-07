@@ -34,7 +34,7 @@
     <header class="intro">
       <img src="img/fun-bus.jpg" alt="bus in the sand">
       <h2>Welcome To Fun Bus!</h2>
-      <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.</p>
+      <p>Traveling expedition <span id="modern">modern</span>, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.</p>
     </header>
     <section class="content-section">
       <div class="text-content">
@@ -61,12 +61,18 @@
       <h2>Pick Your Destination</h2>
       <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
       <img src="img/destination.jpg" alt="Second slide">
+      <div class="empty"><img id="boat" src="img/destination.jpg" alt="Second slide"></div>
+      <div class="empty"></div>
+      <div class="resizrDiv">
+        <p>Window Height: <span id="spanHeight"></span></p>
+        <p>Window Width: <span id="spanWidth"></span></p>
+      </div>
     </section>
     <section class="content-pick">
 
       <div class="destination">
         <h4>Fun In The Sun</h4>
-        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+        <p id="paraScroll">Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <div class="btn">Sign Me Up!</div>
       </div>
       <div class="destination">
@@ -83,7 +89,8 @@
   </div><!-- container -->
 
   <footer class="footer">
-    <p>Copyright Fun Bus 2018</p>
+    <p id="selectedText"></p>
+    <p id="copyright">Copyright Fun Bus 2018</p>
   </footer>
 
 </body>
