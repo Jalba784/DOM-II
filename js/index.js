@@ -107,8 +107,6 @@ for (const empty of dashedSqaure) {
     empty.addEventListener('drop', dragDrop);
 }
 
-
-
 // Drag Functions
 function dragStart() {
     this.className += ' hold';
@@ -193,6 +191,21 @@ let firstP = document.querySelector("p");
 firstP.addEventListener('dblclick', clickMe);
 function clickMe() {
     firstP.textContent = 'I was double clicked';
+}
+
+// Nested Click Event
+let footer = document.querySelector("footer");
+let copyright = document.querySelector("#copyright");
+copyright.style.border = '1px solid black';
+
+footer.addEventListener('click', parentClick);
+function parentClick() {
+    alert('Parent event just fired');
+}
+copyright.addEventListener('click', childClick);
+function childClick(e) {
+    e.stopPropagation();        // Propagation Stopped
+    alert('Child event just fired');
 }
 
 console.log(passwordText);
