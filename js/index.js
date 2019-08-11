@@ -27,4 +27,13 @@ emailFm.addEventListener('blur', (e) => {
     e.target.style.backgroundColor = '';
 });
 
-/* sdf */
+/* Mouseover */
+// Changes font color to green and resizes font to
+// 2.0rem when mouse hovers over navBa1.
+let navBar1 = document.querySelector('nav');
+navBar1.addEventListener('mouseover', (e) => {
+    setTimeout(() => {
+        e.target.style.color = 'green';
+        e.target.style.fontSize = '2.0rem';
+    }, 500);
+}, false);
