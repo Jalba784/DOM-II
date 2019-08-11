@@ -37,3 +37,9 @@ navBar1.addEventListener('mouseover', (e) => {
         e.target.style.fontSize = '2.0rem';
     }, 500);
 }, false);
+
+/* Wheel */
+let allParas = document.querySelector('p');
+allParas.addEventListener('wheel', (e) => {
+    e.target.style.fontSize = '5.0rem';
+});
