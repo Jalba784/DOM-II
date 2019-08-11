@@ -1,6 +1,6 @@
 // Your code goes here
 
-/* Keydown */
+/* Click */
 // Send email address
 let emailBtn = document.querySelector('.emailButton');
 emailBtn.addEventListener('click', (e) => {
@@ -49,4 +49,9 @@ firstPara.addEventListener('wheel', (e) => {
 /* Load */
 window.addEventListener('load', () => {
     alert('Page is fully loaded!');
+});
+
+/* Keydown */
+emailFm.addEventListener('keydown', (e) => {
+    console.log(e.key);
 });
