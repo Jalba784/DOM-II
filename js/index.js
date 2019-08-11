@@ -41,7 +41,12 @@ navBar1.addEventListener('mouseover', (e) => {
 /* Wheel */
 // This event only affects the paragraph that begins with
 // "Traveling expedition modern..."
-let allParas = document.querySelector('p');
-allParas.addEventListener('wheel', (e) => {
+let firstPara = document.querySelector('p');
+firstPara.addEventListener('wheel', (e) => {
     e.target.style.fontSize = '5.0rem';
+});
+
+/* Load */
+window.addEventListener('load', () => {
+    alert('Page is fully loaded!');
 });
