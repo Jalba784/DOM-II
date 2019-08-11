@@ -63,3 +63,9 @@ window.addEventListener('resize', () => {
     let result = `The window's width is: ${w} and the height is: ${h}`;
     console.log(result);
 });
+
+/* Reset */
+let resetFm = document.querySelector('.emailForm');
+resetFm.addEventListener('reset', () => {
+    console.log("Form is reset...");
+});
