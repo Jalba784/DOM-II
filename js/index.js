@@ -55,3 +55,11 @@ window.addEventListener('load', () => {
 emailFm.addEventListener('keydown', (e) => {
     console.log(e.key);
 });
+
+/* Resize */
+window.addEventListener('resize', () => {
+    let w = window.outerWidth;
+    let h = window.outerHeight;
+    let result = `The window's width is: ${w} and the height is: ${h}`;
+    console.log(result);
+});
