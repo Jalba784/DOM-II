@@ -296,13 +296,21 @@ img {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+
+
   /*  Test square for drag and drop event listener */
+
 }
 @media (max-width: 500px) {
   .home .content-destination {
     width: 100%;
   }
 }
+
+.home .content-destination img {
+  border-radius: 10px;
+}
+
 .home .content-destination .resizrDiv {
   margin-top: 20px;
 }
@@ -318,6 +326,7 @@ img {
 .home .content-destination #paraScroll {
   overflow: scroll;
 }
+
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
@@ -333,11 +342,13 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+
 .home .content-pick .destination #paraScroll {
   height: 170px;
   overflow: scroll;
   margin-bottom: 9px;
 }
+
 @media (max-width: 500px) {
   .home .content-pick .destination {
     width: 80%;
